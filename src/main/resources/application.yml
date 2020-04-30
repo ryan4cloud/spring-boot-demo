@@ -1,0 +1,5 @@
+server:
+  port: 3360
+spring:
+  application:
+    name: spring-boot-demo
