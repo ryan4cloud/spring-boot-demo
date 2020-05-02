@@ -1,7 +1,7 @@
 FROM maven:3.6.3 AS build
 COPY . /opt/app/
 WORKDIR /opt/app
-RUN mvn dependency:go-offline -B && mvn -f pom.xml clean package
+RUN mvn -f pom.xml clean package
 
 FROM openjdk:11.0.7-jre
 WORKDIR /home/app
